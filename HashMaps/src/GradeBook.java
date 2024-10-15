@@ -1,3 +1,5 @@
+package HashMaps.src;
+
 import java.util.HashMap;
 
 public class GradeBook {
@@ -11,7 +13,7 @@ public class GradeBook {
     Створіть клас GradeBook, який містить HashMap<String, Student> для зберігання студентів.
     Реалізуйте методи для додавання, видалення та пошуку студентів за ID.
     Реалізуйте метод для виведення всіх студентів та їх оцінок.*/
-    HashMap<String, Student> GradeBook;
+    final HashMap<String, Student> GradeBook;
     GradeBook(HashMap<String, Student> GradeBook){
         this.GradeBook = GradeBook;
     }
@@ -24,6 +26,7 @@ public class GradeBook {
     public Student findStudent(String ID){
         return this.GradeBook.get(ID);
     }
+    @Override
     public String toString(){
         return this.GradeBook.toString();
     }
