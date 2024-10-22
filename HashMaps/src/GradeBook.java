@@ -16,15 +16,17 @@ public class GradeBook {
         this.gradeBook = new HashMap<>();
     }
     public void addStudent(Student student){
-        this.gradeBook.put(student.id + "", student);
+        this.gradeBook.put(student.getId() + "", student);
     }
     public void deleteStudent(String ID){
         this.gradeBook.remove(ID);
     }
     public Student findStudent(String ID){return this.gradeBook.get(ID);}
     public void addGrade(String ID, int grade) {
-        Student student = this.gradeBook.get(ID);
-        student.grades.add(grade);
+        if(this.gradeBook.get(ID) != null){
+            Student student = this.gradeBook.get(ID);
+            student.getGrades().add(grade);
+        }
     }
     @Override
     public String toString(){
