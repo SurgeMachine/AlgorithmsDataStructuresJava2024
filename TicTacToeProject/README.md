@@ -1,1 +1,1 @@
-![Diagram.png](/images/Diagram.png)
+![Diagram.png](C:\Users\Seryozha\IdeaProjects\AlgorithmsDataStructuresJava2024\TicTacToeProject\Diagram.png)
